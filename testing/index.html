@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleepers Store</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #eee;
+            max-width: 1240px;
+            margin: auto;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Hero */
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 60px 40px;
+            gap: 40px;
+            background: #f7f7f7;
+
+        }
+
+        .hero .container {
+            max-width: 1240px;
+            margin: auto;
+        }
+
+        .hero-text {
+            width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .hero-text button {
+            padding: 12px 30px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero img {
+            width: 50%;
+            border-radius: 12px;
+        }
+
+        /* Products */
+        .products {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .products h2 {
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1240px;
+            margin: auto;
+        }
+
+        .product-card {
+            border: 1px solid #eee;
+            padding: 15px;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card h4 {
+            margin: 10px 0 5px;
+        }
+
+        /* Image CTA */
+        .cta {
+
+            padding: 60px 20px;
+            background: #fafafa;
+        }
+
+        .cta .container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            max-width: 1240px;
+            margin: auto;
+        }
+
+        .cta img {
+            width: 50%;
+            border-radius: 12px;
+        }
+
+        .cta-content {
+            width: 50%;
+        }
+
+        .cta-content h2 {
+            margin-bottom: 15px;
+        }
+
+        .cta-content button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: black;
+            color: white;
+            border: none;
+        }
+
+        /* Why Us */
+        .why-us {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px;
+            background: #f5f5f5;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+
+            .hero,
+            .cta {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text,
+            .hero img,
+            .cta img,
+            .cta-content {
+                width: 100%;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>Sleepers</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Comfort That Moves With You</h1>
+                <p>Stylish & soft sleepers for everyday comfort.</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6" alt="Sleepers">
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+        <h2>Best Selling Sleepers</h2>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6">
+                <h4>Classic Flip-Flops</h4>
+                <p>₹499</p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6">
+                <h4>Soft Cushion Sleepers</h4>
+                <p>₹699</p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6">
+                <h4>Daily Wear Slides</h4>
+                <p>₹599</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <img src="https://images.unsplash.com/photo-1514996937319-344454492b37">
+            <div class="cta-content">
+                <h2>Lightweight. Durable. Trendy.</h2>
+                <p>Perfect sleepers for home & outdoor use.</p>
+                <button>View Collection</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="why-us">
+        <div>✔ Anti-Slip Sole</div>
+        <div>✔ Soft Cushion</div>
+        <div>✔ Affordable Price</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Sleepers Store. All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>
