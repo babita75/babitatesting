@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Clothing Brand</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">MyBrand</div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Style That Defines You</h1>
+        <p>Simple • Comfortable • Trendy</p>
+        <button>Shop Now</button>
+    </section>
+
+    <!-- Image with CTA Section -->
+    <section class="image-cta">
+        <div class="image-cta__content">
+            <h2>New Summer Collection</h2>
+            <p>
+                Lightweight fabrics and modern styles designed for everyday comfort.
+            </p>
+            <button>Explore Collection</button>
+        </div>
+
+        <div class="image-cta__image">
+            <img src="https://cdn.shopify.com/s/files/1/0646/8953/7202/files/RotatingBanner7_Gaming_Desktop.jpg?v=1759919859"
+                alt="Clothing Collection">
+        </div>
+    </section>
+
+
+    <!-- Featured Products -->
+    <section class="products">
+        <h2>Featured Collection</h2>
+        <div class="product-grid">
+            <div class="product-card">Product 1</div>
+            <div class="product-card">Product 2</div>
+            <div class="product-card">Product 3</div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+        <h2>About Our Brand</h2>
+        <p>
+            We create stylish and comfortable clothing for everyday wear.
+        </p>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div>✔ Premium Fabric</div>
+        <div>✔ Affordable Price</div>
+        <div>✔ Made with Love</div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 MyBrand. All Rights Reserved.</p>
+    </footer>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: #070606ba;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            border: none;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Image CTA Section */
+        .image-cta {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 80px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .image-cta__content {
+            width: 50%;
+        }
+
+        .image-cta__content h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .image-cta__content p {
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .image-cta__content button {
+            padding: 12px 30px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .image-cta__image {
+            width: 50%;
+        }
+
+        .image-cta__image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Products */
+        .products {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .product-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            width: 200px;
+            height: 250px;
+            background: #070606ba;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* About */
+        .about {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        /* Why Us */
+        .why-us {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px;
+            background: #fafafa;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: #fff;
+        }
+
+       
+    </style>
+</body>
+
+</html>
